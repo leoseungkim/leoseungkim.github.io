@@ -1,0 +1,76 @@
+/* ======== FONTS ======== */
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/Poppins/Poppins-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/Poppins/Poppins-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ======== DIVS ======== */
+
+* {
+  font-family: 'poppins';
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+}
+
+.header {
+
+  height: 295px;
+  line-height: 295px;
+
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: bold;
+
+  background-color: #F8FDFF;
+  background-image: url('../images/header.svg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+article {
+  margin: 10% 15%;
+}
+
+table, td, th {
+  margin: 10px auto 10px auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+td {
+  padding: 5px 10px 5px 10px;
+}
