@@ -1,0 +1,20 @@
+{
+  "questions": [
+
+    {
+      "question": "How is the word 'bit' transcribed?",
+      "answers": [
+        { "text": "bit", "correct": false },
+        { "text": "bIt", "correct": true }
+      ]
+    },
+
+    {
+      "question": "How is the word 'missed' transcribed?",
+      "answers": [
+        { "text": "mIst", "correct": true },
+        { "text": "misst", "correct": false }
+      ]
+    }
+  ]
+}
