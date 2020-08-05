@@ -78,35 +78,45 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: "How is the word 'bit' transcribed?",
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: "[bit]", correct: false },
+      { text: "[bɪt]", correct: true },
+      { text: "[beet]", correct: false }
     ]
   },
+
   {
-    question: 'Who is the best YouTuber?',
+    question: "How is the word 'missed' transcribed?",
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: "[mɪst]", correct: true },
+      { text: "[mist]", correct: false },
+      { text: "[mɪsst]", correct: false },
+      { text: "[misst]", correct: false },
+      { text: "[misd]", correct: false }
     ]
   },
+
   {
-    question: 'Is web development fun?',
+    question: "How is the word 'coconut' transcribed?",
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: "[ˈko.koˌnʌt]", correct: false },
+      { text: "[ˈkʰoʊ.kəˌnʌt]", correct: true },
+      { text: "[kʰoʊˈkəˌnʌt]", correct: false },
+      { text: "[ˈkʰow.kəˌnʌt]", correct: true },
     ]
   },
+
   {
-    question: 'What is 4 * 2?',
+    question: "How is the word 'gap' transcribed?",
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      
+      { text: "[gap]", correct: false },
+      { text: "[gʰæp]", correct: false },
+      { text: "[gæp]", correct: true },
+      { text: "[geɪp]", correct: false },
+      { text: "[gæb]", correct: false }
     ]
-  }
+  },
+
 ]

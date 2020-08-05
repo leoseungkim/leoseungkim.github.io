@@ -36,9 +36,9 @@
 }
 
 :root {
-  --hue-neutral: 200;
+  --hue-neutral: 0;
   --hue-wrong: 0;
-  --hue-correct:145;
+  --hue-correct: 207;
 }
 
 .btn-grid {
@@ -48,33 +48,43 @@
 }
 
 .btn {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
   padding: 10px;
+  padding-left: 20px;
   font-size: 16px;
   border: 0px;
   border-radius: 10px;
   --hue: var(--hue-neutral);
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: hsl(var(--hue), 0%, 91%);
 }
 
 .btn:hover {
   --hue: var(--hue-neutral);
-  background-color: hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 0%, 77%);
 }
 .btn.correct {
   --hue: var(--hue-correct);
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: hsl(var(--hue), 76%, 86%);
 }
 
 .btn.wrong {
   --hue: var(--hue-wrong);
-  background-color: hsl(var(--hue), 100%, 50%);
+  background-color: hsl(var(--hue), 100%, 86%);
 }
 
-#next-btn {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 20px;
+#next-btn, #start-btn {
+  background-color: hsl(207, 90%, 61%);
+  padding: 10px;
+  text-align: center;
+  font-family: 'poppins';
+}
 
+#next-btn:hover, #start-btn:hover {
+  background-color: hsl(207, 90%, 50%);
+  padding: 10px;
+  text-align: center;
+  font-family: 'poppins';
 }
 
 .hide {
@@ -86,7 +96,6 @@
 #question {
   margin: 30px 0px;
 }
-
 
 .header {
 
