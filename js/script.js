@@ -110,7 +110,7 @@ const questions = [
   {
     question: "How is the word 'gap' transcribed?",
     answers: [
-      
+
       { text: "[gap]", correct: false },
       { text: "[gʰæp]", correct: false },
       { text: "[gæp]", correct: true },
@@ -118,5 +118,14 @@ const questions = [
       { text: "[gæb]", correct: false }
     ]
   },
+
+  {
+    question: "How is the word 'tooth' transcribed?",
+    answers: [
+      { text: "[tuth]", correct: false },
+      { text: "[tʰuθ]", correct: true },
+      
+    ]
+  }
 
 ]
