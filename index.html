@@ -1,34 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seung</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo Seung Kim</title>
+  <link rel="stylesheet" href="css/style_main.css">
 </head>
+
+<style>
+    html * { font-family: paratype, serif; }
+    header { 
+        z-index: 1;
+        position: absolute; 
+        width: 100%;
+        padding-top: 50px; 
+        padding-bottom: 20px; 
+        margin-bottom: 20%;
+    }
+    div.clippy { 
+        z-index: 2;
+        position: absolute; 
+        top: 60px;
+        right: 10%;
+    }
+    h1, h2 { text-align: center; }
+    h2 { font-weight: normal; font-size: 20px; }
+    article { margin-left: 25%; margin-right: 25%; margin-bottom: 25%; padding-top: 230px}
+    p { font-size: 3; }
+    a:link, a:visited { color: black; text-decoration-color:black;}
+    .wavy { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: red; }
+    .name {
+        font-style: italic;
+        display: inline-block;
+        width: 70px;
+    }
+    .cite {
+        text-align: right;
+    }
+    table {
+        width: 100%;
+        align: center;
+        text-align: center;
+        border: 1px solid black;
+        border-left: none;
+        border-right: none;
+        border-collapse: collapse;
+    }
+    td { border-collapse:collapse; }
+    th { border-bottom:1px solid black; }
+
+
+    /* Tooltip container */
+    .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+    visibility: visible;
+    }
+</style>
+
 <body>
-    <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Welcome to my page!</h1>
-            <article id='main'>
-                Hello. My name is Seung Kim and I'm a linguistics MA student at Boston College.
-
-                I have a beautiful pet betta named Alpha.
-
-                My areas of interest are psycholinguistics, computational linguistics, and the history of linguistics.
-
-
-
-                <br>
-                <br>
-                <a class='btn' href="practice_ipa.html" role='button' style="background-color: hsl(207, 90%, 61%);
-                padding: 10px;
-                text-align: center;
-                font-family: 'poppins';">IPA Practice</a>
-            </article>
-            
+    <header>
+        <h1>My personal website</h1>
+        <h2>Leo <u class=wavy>Seung</u> Kim</h2>
+        <script>
+            var date = new Date().toLocaleString('en-us',{month:'long', year:'numeric', day:'numeric'})
+            document.write("<h2>" + date + "</h2>")
+        </script>
+        <div class='clippy'>
+            <img src='images/clippy.png' alt='clippy' class='clippy'>
         </div>
+        
+    </header>
+    
 
-    </div>
+    <article>
+        <h3>1. Who I am</h3>
+        <p>
+            <div class='name'>Inigo:</div> Who are you?<br>
+            <div class='name'>Westley:</div> No one of consequence.<br>
+            <div class='name'>Inigo:</div> I must know.<br>
+            <div class='name'>Westley:</div> Get used to disappointment.<br>
+            <div class='cite'><i>–The Princess Bride</i> (1987)</div>
+        </p>
+
+        <p>
+            Hi, I'm Leo. I'm a master's student in linguistics at Boston College. 
+            My advisor is <a href='https://sites.bc.edu/margaret-thomas/'>Dr. Margaret Thomas</a>.
+            Here, I also received my bachelor's degree in linguistics with a minor in computer science.
+            I'm the teaching assistant for LING2379: <i>Language and Ethnicity</i> 
+            in Spring 2021—if you are looking for the IPA practice page, please click <a href=''>here</a>.
+        </p>
+        <p>
+            My given name is <a class='tooltip'><i>Seung Hwan</i><span class='tooltiptext'>/ɕɯŋhwan/ in Korean; /sʌŋ/ in English</span></a> (승환),
+            and it's used in all my publications and presentations as of January 2021. It's a tragically difficult name in both Korean and English.
+            I have decided to go by Leo among English speakers starting in 2021. 
+        </p>
+
+        <p>
+            In my free time I can be found watching movies, reading books, and playing <i>Minecraft</i>. 
+        </p>
+      
+
+        <!-- 
+        <p>
+            Koreans (even my own relatives) often mistake my name as 
+            <a class='tooltip'><i>Seong-hwan</i><span class='tooltiptext'>/ɕʌŋhwan/</span></a> 
+            or <a class='tooltip'><i>Seung-han</i><span class='tooltiptext'>/ɕɯŋhan/</span></a> 
+            or <a class='tooltip'><i>Seung-wan</i><span class='tooltiptext'>/ɕɯŋwan/</span></a>, 
+            or any combination of these errors.
+            For English speakers, I have truncated my name to <i>Seung</i> and pronounced it like the word
+            <a class='tooltip'><i>sung</i><span class='tooltiptext'>/sʌŋ/</span></a> 
+            because the original vowel /ɯ/, being outside the English phonetic inventory,
+            is impossible for most native English speakers to perceive let alone produce.
+            Yet the orthographic string <i>Seung</i> emphatically suggests a pronunciation 
+            different from <i>sung</i> (why is the <i>e</i> there?), resulting in such painful pronunciations as
+            <a class='tooltip'><i>soong</i><span class='tooltiptext'>/suŋ/</span></a>
+            or <a class='tooltip'><i>seyoong</i><span class='tooltiptext'>/sɛjung/</span></a> 
+            or <a class='tooltip'><i>seng</i><span class='tooltiptext'>/sɛŋ/</span></a>.
+        </p> 
+        <p>
+            Such mispronunciations are not the result of racism or insensitivity of any flavor.
+            I have repeatedly heard the 'Tchaikovsky argument' from well-meaning friends 
+            but I am not a world-famous composer and Tchaikovsky does not pretend to be 
+            homophonous with any English word.
+        </p>-->
+
+        
+        <h3>2. What I have done</h3>
+
+        <p>TBD</p>
+
+        <h3>3. How we can be in touch</h3>
+
+        <table id="contact">
+            <tr>
+                <th>How</th>
+                <th>Where</th>
+            </tr>
+            <tr>
+              <td>Email (School)</td>
+              <td>kimcog@bc.edu</td>
+            </tr>
+            <tr>
+              <td>Email (Personal)</td>
+              <td>seungkim.h@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>(610) 570-1784</td>
+            </tr>
+          </table>
+
+    </article>
+    
+
+
 </body>
+
+
+
+
+
+
 </html>
