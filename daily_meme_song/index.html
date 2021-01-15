@@ -6,7 +6,7 @@
 
   <title>daily meme song</title>
 
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -14,19 +14,67 @@
     html, body {
         width: 100%;
         height: 100%;
+        margin: 0;
+        padding: 0;
+        background: black;
     }
     button {
         align-self: center;
     }
+    .splash {
+        width: 100%; 
+        height: 100%; 
+        background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .4)), url('images/outoftouch.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'poppins';
+        font-weight: bold;
+        font-size: 6vw;
+        color: white;
+        text-shadow: black 0px 0px 20px;
+    }
+
+    article {
+        background: white;
+        padding: 5%;
+        margin: 10%;
+        font-family: poppins;
+        font-size: large;
+    }
 </style>
 
 <body>
+
+<div class='splash'>It's Out of Touch Thursday!</div>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/d7xMgJedN2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<article>
+    <p>
+    <b>Out of Touch</b> is a 1984 song by Hall and Oates. 
+    It has become a meme for no good reason other than the fact that 
+    it fits nearly perfectly with the the opening to the anime <i>Lucky Star</i>.
+    It is an example of the absurdity of Zillenial humor.
+
+    </p>
+
+</article>
+
+
+<!--
+
 <button type='button'>Today is...</button>
 <br>
 
+
 <b>Thursday!</b>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d7xMgJedN2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+-->
 </body>
+
 </html>
